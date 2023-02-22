@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/6e7142bf69.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <img src="images/logo.jpg" class="logo">
+        <div class="container">
+            <nav>
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact Me</a></li>
+                    <i class="fas fa-times" onclick="closemenu()"></i>
+                </ul>
+                <i class="fas fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>UI Designer</p>
+                <h1>Hi, I'm <span>Rithik</span><br> Singh From Delhi</h1>
+            </div>
+        </div>
+    </div>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Banjor Everyone, My self Rithik Singh from Delhi, India, roots from Uttrakhand. I'm 21 year old, who have a bug of coding fitted inside. My major intentions and intrests are in Web Technologies and also in area related to creating new things and maintaing the excisting one's also and upgrade them according to the needs.</p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                        <!-- <p class="tab-links" onclick="opentab('more')">More</p> -->
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI</span><br>Knowledge of desging UI interfaces according to the user</li>
+                            <li><span>Web Languages</span><br>I have an uppert hands on Javascript,HTML,CSS,PHP</li>
+                            <li><span>Constant Learner</span><br>Love to explore new things to learn form them</li>
+                            <li><span>Communication</span><br>I'm able to communicate effictively and a good listener also</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents " id="education">
+                        <ul>
+                            <li><span>Graduation</span><br>BCA from Almora</li>
+                            <li><span>Training</span><br>2 months taining on industry works </li>
+                           
+                        </ul>
+                    </div>
+                    <!-- <div class="tab-contents " id="more">
+                        <ul>
+                            <li><span>Experince</span><br>Lorem ipsum dolor sit amet.</li>
+                            <li><span>Lorem</span><br>Lorem ipsum dolor sit amet.</li>
+                            <li><span>Lorem</span><br>Lorem ipsum dolor sit amet.</li>
+                        </ul>
+                    </div> -->
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ------portfolio--- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My projects</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/image1.png">
+                    <div class="layer">
+                        <h3>Facebook</h3>
+                        <p>This is a login page of facebook renderd with pure HTML and CSS </p>
+                        <a href="https://github.com/Bhupendra345/project3.git">View project</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image6.jpg">
+                    <div class="layer">
+                        <h3>Flipkart</h3>
+                        <p>This is a dummy page layout of flipkart renderd with pure HTML and CSS(animantions) </p>
+                        <a href="https://github.com/Bhupendra345/project2.git">View project</a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/image3.png">
+                    <div class="layer">
+                        <h3>E-comerce Site</h3>
+                        <p>This is a dummy E-commerce site where a vendor can upload his prodoucts and a user can buy the
+                            products. This site is maked by using HTML,CSS,BOTSTRAP,javascript,PHP,DBMS(SQL) </p>
+                        <a href="https://github.com/Bhupendra345/project1.git">View project</a>
+                    </div>
+                </div>
+            </div>
+            <a href="https://github.com/Bhupendra345" class="btn">See more</a>
+        </div>
+    </div>
+    <!-- -------------contact---------- -->
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p> <i class="fas fa-paper-plane"></i> manralrithiksingh@gmail.com</p>
+                    <p> <i class="fas fa-phone-square-alt"></i> 8650487010</p>
+                    <div class="social-icons">
+                        <!-- <a href=""><i class="fa-brands fa-facebook"></i></a> -->
+                        <a href="https://www.instagram.com/rtk_singh03/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://twitter.com/RtkSingh_"><i class="fa-brands fa-square-twitter"></i></a>
+                        <a href="https://www.linkedin.com/in/bhupendra-singh-40493625b/"><i class="fa-brands fa-linkedin"></i></a>
+                    </div>
+                    <a href="#" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your name" required>
+                        <input type="text" name="email" placeholder="Your Email" required>
+                        <textarea name=" message" placeholder="Your Message" rows="10"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+
+        </div>
+        <div class="copyright">
+            <p>Copyright &copy; Rithik. Portfolio Website</p>
+        </div>
+
+    </div>
+
+    <script>
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");//display color
+            document.getElementById(tabname).classList.add("active-tab");//display contnet
+        }
+
+    </script>
+    <script>
+        var sidemenu = document.getElementById("sidemenu");
+
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+    </script>
+    <script>
+        const scriptURL = 'https://script.google.com/macros/s/AKfycby5-5Un_JBTtbQ4uFfPqYalnrjshe7YSfD_ynQvi-rYuPhGFterPIMNSKKMkYpxTng/exec'
+        const form = document.forms['submit-to-google-sheet']
+        const msg = document.getElementById("msg")
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => {
+                    msg.innerHTML = "Message sent sucessfully"
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000)
+                    form.reset()
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
